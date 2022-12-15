@@ -14,17 +14,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a href="source/index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="source/catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a>
                 Форма отзыва
               </a>
             </li>
@@ -38,12 +38,13 @@
       <img class="main-header__project-image" src="#" width="320" height="389" alt="Горы в Седоне">
     </header>
     <main class="form-container">
-      <div class="form-intro">
+      <section class="form-intro">
         <h1 class="form-intro__title">Оставьте свой отзыв</h1>
         <p class="form-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+      </section>
       <section class="author">
         <form action="#">
+          
           <h2 class="forms-name">Представьтесь:</h2>
           <label for="fname">имя:</label><br>
           <input type="text" id="fname" name="fname" value="Петр"><br>
@@ -51,17 +52,13 @@
           <input type="text" id="lname" name="lname" value="Пустота"><br>
           <label for="patronymic">отчество:</label><br>
           <input type="text" id="patronymic" name="patronymic" value="Викторович">
-        </form>
-        <form action="#">
+
           <h2 class="forms-name">контактная информация</h2>
           <label for="phone">контактный телефон:</label><br>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="Введите телефон"><br>
           <label for="email">электронная почта:</label><br>
           <input type="email" id="email" name="email" value="Введите e-mail">
-        </form>
-      </section>
-      <section class="review">
-        <form action="#">
+
           <h2 class="forms-name">ваше общее впечатление:</h2>
           <input type="radio" id="good" name="view" value="скорее_положительное" checked>
           <label for="good">скорее положительное</label><br>
@@ -69,8 +66,7 @@
           <label for="bad">скорее отрицательное</label><br>
           <input type="radio" id="nothing" name="view" value="затрудняюсь_ответить">
           <label for="nothing">затрудняюсь ответить</label>
-        </form>
-        <form action="#">
+
           <h2 class="forms-name">посещенные достопримечательности:</h2>
           <input type="checkbox" id="sight1" name="sight1" value="Мост_Дьявола" checked>
           <label for="sight1"> Мост Дьявола</label><br>
@@ -80,36 +76,32 @@
           <label for="sight3"> Слайд-парк</label><br>
           <input type="checkbox" id="sight4" name="sight4" value="Красные_скалы">
           <label for="sight4"> Красные скалы</label>
-        </form action="#">
-        <form action="#">
+
           <h2 class="forms-name">опишите свои эмоции:</h2>
           <textarea rows="10" cols="50" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
+
         </form>
         <button class="review__activate" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__tag">
-          #visitSEDONA
-        </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+      <div class="main-footer__tag">
+        #visitSEDONA
+      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
